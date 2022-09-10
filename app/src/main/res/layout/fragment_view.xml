@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/fragment_news_image"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/fragment_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="News Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/saveRestaurantButton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:id="@+id/fragment_news_description"
+                    android:layout_width="356dp"
+                    android:layout_height="151dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="367dp"
+                    android:layout_height="51dp"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/fragment_news_publishedAt"
+                            android:layout_width="123dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="16dp"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textColor="@color/colorTextIcons"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/fragment_news_sources"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/fragment_news_sources"
+                            android:layout_width="221dp"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="16dp"
+                            android:drawablePadding="4dp"
+                            android:gravity="center_vertical"
+                            android:text="Sources"
+                            android:textColor="@color/colorTextIcons"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/fragment_news_publishedAt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveRestaurantButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:text="Save Restaurant"
+                android:textColor="@color/colorTextIcons"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
