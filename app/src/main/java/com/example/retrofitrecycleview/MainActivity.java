@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,12 +35,15 @@ public class MainActivity extends AppCompatActivity {
     NewsAdapter adapter;
     List<Article> newsArticle = new ArrayList<>();
 
+    TextView mUnderline;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+
 
         apiCall();
 
