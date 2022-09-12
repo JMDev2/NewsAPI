@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.SplashScreen"
-    android:background="#fece2f">
+    android:background="@drawable/color"
+    >
 
     <ImageView
         android:id="@+id/splash_iamge"

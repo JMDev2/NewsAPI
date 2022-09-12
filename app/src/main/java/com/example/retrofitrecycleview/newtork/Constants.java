@@ -15,4 +15,11 @@ public class Constants {
     public static final String WEATHER_BASE_URL = "http://api.weatherstack.com/";
     public static final String WEATHER_KEY = "weather_api";
     public static final String WEATHER_API_KEY = BuildConfig.WEATHER_API_KEY;
+
+
+    //nutrionix api
+    public static final String HEALTH_BASE_URL = "https://api.nutritionix.com/v1_1/";
+    public static final String API_TOKEN = "api_token";
+    public static final String APP_ID = BuildConfig.APP_ID;
+    public static final String HEALTH_API_KEY = BuildConfig.HEALTH_API_KEY;
 }

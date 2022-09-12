@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.retrofitrecycleview.R;
 import com.example.retrofitrecycleview.models.sports.Sportsresponse;
-import com.example.retrofitrecycleview.newtork.SportsClient;
+import com.example.retrofitrecycleview.newtork.sports.SportsClient;
 
 import java.util.List;
 

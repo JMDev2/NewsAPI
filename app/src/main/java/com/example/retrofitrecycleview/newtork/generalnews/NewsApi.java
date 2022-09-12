@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.newtork;
+package com.example.retrofitrecycleview.newtork.generalnews;
 
 import com.example.retrofitrecycleview.models.news.NewsResponse;
 import com.example.retrofitrecycleview.models.sports.Sportsresponse;
@@ -15,12 +15,5 @@ public interface NewsApi {
             @Query("language") String language,
             @Query("apiKey") String apiToken
             );
-
-
-    @GET("all_sports.php")
-    Call<Sportsresponse> getSport();
-
-
-
 
 }
