@@ -1,14 +1,13 @@
-package com.example.retrofitrecycleview;
+package com.example.retrofitrecycleview.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.retrofitrecycleview.models.Article;
+import com.example.retrofitrecycleview.R;
+import com.example.retrofitrecycleview.models.news.Article;
 
 import org.parceler.Parcels;
-
-import java.util.List;
 
 public class NewsItemActivity extends AppCompatActivity {
     private ViewFragment viewFragment;

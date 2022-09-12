@@ -7,7 +7,7 @@
     app:cardElevation="1dp"
     app:cardMaxElevation="1dp"
     app:cardUseCompatPadding="true"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,9 +28,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="215dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="14dp"
                 android:layout_marginBottom="5dp"
                 app:cardCornerRadius="10dp">
 
@@ -81,11 +81,11 @@
                                 app:layout_constraintTop_toTopOf="parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView4"
+                                    android:id="@+id/sports_news"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:srcCompat="@drawable/sports"
-                                    android:scaleType="fitXY"/>
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/sports" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -117,8 +117,8 @@
                                     android:id="@+id/imageView5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="50dp"
-                                    app:srcCompat="@drawable/business"
-                                    android:scaleType="fitXY"/>
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/business" />
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="match_parent"
@@ -152,14 +152,14 @@
                                     android:id="@+id/imageView48"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:srcCompat="@drawable/enter"
-                                    android:scaleType="fitXY"/>
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/enter" />
 
                             </androidx.cardview.widget.CardView>
 
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/Entertainmenttt"
+                                android:id="@+id/Weather"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_marginStart="30dp"
@@ -172,11 +172,11 @@
                                 app:layout_constraintTop_toTopOf="parent">
 
                                 <ImageView
-                                    android:id="@+id/imageView48ed"
+                                    android:id="@+id/weather_image"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:srcCompat="@drawable/sports"
-                                    android:scaleType="fitXY"/>
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/sports" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -196,9 +196,9 @@
                                 android:layout_height="18dp"
                                 android:text="TextView"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="@+id/Entertainmenttt"
-                                app:layout_constraintStart_toStartOf="@+id/Entertainmenttt"
-                                app:layout_constraintTop_toBottomOf="@+id/Entertainmenttt" />
+                                app:layout_constraintEnd_toEndOf="@+id/Weather"
+                                app:layout_constraintStart_toStartOf="@+id/Weather"
+                                app:layout_constraintTop_toBottomOf="@+id/Weather" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 

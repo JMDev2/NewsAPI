@@ -33,6 +33,7 @@ android {
 
     buildTypes.each {
         it.buildConfigField 'String', 'NEWS_API_KEY', NewsApiKey
+        it.buildConfigField 'String', 'WEATHER_API_KEY', WeatherApiKey
 
     }
 }

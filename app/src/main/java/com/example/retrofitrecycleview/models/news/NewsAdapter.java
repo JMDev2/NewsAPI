@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.models;
+package com.example.retrofitrecycleview.models.news;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,15 +8,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.retrofitrecycleview.NewsItemActivity;
+import com.example.retrofitrecycleview.ui.NewsItemActivity;
 import com.example.retrofitrecycleview.R;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;

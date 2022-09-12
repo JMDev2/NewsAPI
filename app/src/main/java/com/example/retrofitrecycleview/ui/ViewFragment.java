@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview;
+package com.example.retrofitrecycleview.ui;
 
 import android.os.Bundle;
 
@@ -12,7 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.retrofitrecycleview.models.Article;
+import com.example.retrofitrecycleview.R;
+import com.example.retrofitrecycleview.models.news.Article;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;

@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1574074074074074" />
         <entry key="app/src/main/res/layout/activity_news_item.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_sports.xml" value="0.32608695652173914" />
+        <entry key="app/src/main/res/layout/activity_weather.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_view.xml" value="0.5318818040435459" />
         <entry key="app/src/main/res/layout/newsitemactivity.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/newsitems.xml" value="0.2671875" />

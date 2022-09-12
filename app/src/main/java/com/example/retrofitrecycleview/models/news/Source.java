@@ -1,5 +1,5 @@
 
-package com.example.retrofitrecycleview.models;
+package com.example.retrofitrecycleview.models.news;
 
 
 import com.google.gson.annotations.Expose;
