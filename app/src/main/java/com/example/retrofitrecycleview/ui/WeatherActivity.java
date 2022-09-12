@@ -2,6 +2,7 @@ package com.example.retrofitrecycleview.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,7 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        Call<WeatherResponse> call = WeatherClient.getClient().getWeather(Constants.WEATHER_API_KEY, "query");
+        Call<WeatherResponse> call = WeatherClient.getClient().getWeather(Constants.WEATHER_API_KEY, "Nairobi");
 
         button = findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
@@ -43,8 +44,13 @@ public class WeatherActivity extends AppCompatActivity {
 
                     }
                 });
+                Intent intent = new Intent(WeatherActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
+
+
+
 
 
     }

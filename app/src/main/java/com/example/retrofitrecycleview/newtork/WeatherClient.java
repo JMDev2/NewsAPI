@@ -6,12 +6,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class WeatherClient {
     public static Retrofit retrofit = null;
 
-    public static NewsApi getClient(){
+    public static WeaatherApi getClient(){
         if (retrofit == null){
             retrofit = new Retrofit.Builder().baseUrl(Constants.WEATHER_BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit.create(NewsApi.class);
+        return retrofit.create(WeaatherApi.class);
     }
+
+
 }

@@ -17,17 +17,10 @@ public interface NewsApi {
             );
 
 
-
     @GET("all_sports.php")
     Call<Sportsresponse> getSport();
 
 
-//    WeatherStack ApI
 
-    @GET("current")
-    Call<WeatherResponse> getWeather(
-            @Query("access_key") String access_key,
-            @Query("query") String query
-    );
 
 }

@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Retrofitrecycleview"
         tools:targetApi="31">
+
         <activity
             android:name=".ui.WeatherActivity"
             android:exported="false" />
@@ -24,10 +25,16 @@
         <activity android:name=".ui.NewsItemActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.retrofitrecycleview.ui.MainActivity"></meta-data>
+                android:value="com.example.retrofitrecycleview.ui.MainActivity" />
         </activity>
+
         <activity
             android:name=".ui.MainActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".ui.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +42,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
 
         <meta-data
             android:name="preloaded_fonts"
