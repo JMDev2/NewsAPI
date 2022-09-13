@@ -8,6 +8,7 @@ public class Constants {
     public static final String NEWS_API_KEY = BuildConfig.NEWS_API_KEY;
 
 
+    //the sportDB
     public static final String SPORT_BASE_URL = "https://www.thesportsdb.com/api/v1/json/2/";
 
 

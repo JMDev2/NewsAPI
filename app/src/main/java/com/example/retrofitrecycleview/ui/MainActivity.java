@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.example.retrofitrecycleview.R;
 import com.example.retrofitrecycleview.models.news.Article;
-import com.example.retrofitrecycleview.models.news.NewsAdapter;
+import com.example.retrofitrecycleview.Adapter.NewsAdapter;
 import com.example.retrofitrecycleview.models.news.NewsResponse;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsApi;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsClient;
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     NewsAdapter adapter;
     List<Article> newsArticle = new ArrayList<>();
 
+
+    //click images
     ImageView openSports;
     ImageView openHealth;
     ImageView openEnter;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerview);
+
+        //click images
         openSports = findViewById(R.id.sports_news);
         openHealth = findViewById(R.id.health_image);
         openEnter = findViewById(R.id.entertainment_image);

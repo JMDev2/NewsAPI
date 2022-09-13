@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.models.news;
+package com.example.retrofitrecycleview.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.retrofitrecycleview.models.news.Article;
 import com.example.retrofitrecycleview.ui.NewsItemActivity;
 import com.example.retrofitrecycleview.R;
 import com.squareup.picasso.Picasso;
