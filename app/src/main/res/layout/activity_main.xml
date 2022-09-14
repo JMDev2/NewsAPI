@@ -7,7 +7,7 @@
     app:cardElevation="1dp"
     app:cardMaxElevation="1dp"
     app:cardUseCompatPadding="true"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.news.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"

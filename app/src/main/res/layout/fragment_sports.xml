@@ -57,66 +57,17 @@
 
                 <TextView
                     android:id="@+id/fragment_sports_description"
-                    android:layout_width="356dp"
-                    android:layout_height="151dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:drawablePadding="4dp"
                     android:gravity="center"
+                    android:scrollbars="vertical"
                     android:text="Description"
                     android:textColor="@color/colorTextIcons"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="367dp"
-                    android:layout_height="51dp"
-                    android:orientation="horizontal">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/fragment_news_publishedAt"
-                            android:layout_width="123dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="4dp"
-                            android:layout_marginBottom="16dp"
-                            android:drawablePadding="4dp"
-                            android:gravity="center"
-                            android:text="Date"
-                            android:textColor="@color/colorTextIcons"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/fragment_news_sources"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/fragment_news_sources"
-                            android:layout_width="221dp"
-                            android:layout_height="38dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="16dp"
-                            android:drawablePadding="4dp"
-                            android:gravity="center_vertical"
-                            android:text="Sources"
-                            android:textColor="@color/colorTextIcons"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/fragment_news_publishedAt"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
 
             </LinearLayout>
 

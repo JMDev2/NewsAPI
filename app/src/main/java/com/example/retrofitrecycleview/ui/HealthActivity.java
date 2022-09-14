@@ -11,6 +11,7 @@ import com.example.retrofitrecycleview.R;
 import com.example.retrofitrecycleview.models.health.HealthResponse;
 import com.example.retrofitrecycleview.newtork.Constants;
 import com.example.retrofitrecycleview.newtork.health.HealthClient;
+import com.example.retrofitrecycleview.ui.news.MainActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.retrofitrecycleview.models.news.Article;
-import com.example.retrofitrecycleview.ui.NewsItemActivity;
+import com.example.retrofitrecycleview.ui.news.NewsItemActivity;
 import com.example.retrofitrecycleview.R;
 import com.squareup.picasso.Picasso;
 

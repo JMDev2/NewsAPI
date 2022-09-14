@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.retrofitrecycleview.R;
+import com.example.retrofitrecycleview.ui.news.MainActivity;
 
 public class SplashScreen extends AppCompatActivity {
 

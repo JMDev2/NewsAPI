@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.ui;
+package com.example.retrofitrecycleview.ui.news;
 
 import androidx.appcompat.app.AppCompatActivity;
 

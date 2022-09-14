@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.ui;
+package com.example.retrofitrecycleview.ui.news;
 
 import static com.example.retrofitrecycleview.newtork.Constants.NEWS_API_KEY;
 
@@ -19,6 +19,9 @@ import com.example.retrofitrecycleview.Adapter.NewsAdapter;
 import com.example.retrofitrecycleview.models.news.NewsResponse;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsApi;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsClient;
+import com.example.retrofitrecycleview.ui.EntertainmentActivity;
+import com.example.retrofitrecycleview.ui.HealthActivity;
+import com.example.retrofitrecycleview.ui.sport.SportsActivity;
 
 import java.util.ArrayList;
 import java.util.List;

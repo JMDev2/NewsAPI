@@ -1,6 +1,7 @@
 package com.example.retrofitrecycleview.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.retrofitrecycleview.R;
 import com.example.retrofitrecycleview.models.sports.Sport;
+import com.example.retrofitrecycleview.ui.sport.DisplaySportActivity;
 import com.squareup.picasso.Picasso;
+
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,24 +52,24 @@ public class SportAdapter extends RecyclerView.Adapter <SportAdapter.SportViewHo
     }
 
 
-    public class SportViewHolder extends RecyclerView.ViewHolder  {
+    public class SportViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private ImageView sportImage;
         private TextView sporttype;
         private TextView sportFomart;
 
         private Context context;
-        private List<Sport> sport = new ArrayList<>();
+        private List<Sport> mSport = new ArrayList<>();
 
 
         public SportViewHolder(@NonNull View itemView, List<Sport> sport) {
             super(itemView);
-            this.context = context;
+            this.mSport = sport;
             context = itemView.getContext();
             sportImage = itemView.findViewById(R.id.sport_image);
             sporttype = itemView.findViewById(R.id.sport_type);
             sportFomart = itemView.findViewById(R.id.sport_format);
 
-//            itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
 
 
 
@@ -75,6 +79,17 @@ public class SportAdapter extends RecyclerView.Adapter <SportAdapter.SportViewHo
             sporttype.setText(sport.getStrSport());
             sportFomart.setText(sport.getStrFormat());
             Picasso.get().load(sport.getStrSportThumb()).into(sportImage);
+        }
+
+        @Override
+        public void onClick(View view) {
+            int itemPosition = getAdapterPosition();
+            Intent intent = new Intent(context, DisplaySportActivity.class);
+            intent.putExtra("position", itemPosition);
+            intent.putExtra("sport", Parcels.wrap(mSport.get(itemPosition)));
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            context.startActivity(intent);
+
         }
     }
 }

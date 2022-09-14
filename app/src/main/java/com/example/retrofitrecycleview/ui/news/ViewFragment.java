@@ -1,4 +1,4 @@
-package com.example.retrofitrecycleview.ui;
+package com.example.retrofitrecycleview.ui.news;
 
 import android.os.Bundle;
 
@@ -67,9 +67,9 @@ public class ViewFragment extends Fragment {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_view, container, false);
 
-       newsImage = view.findViewById(R.id.fragment_news_image);
-       newsTitle = view.findViewById(R.id.fragment_news_title);
-       newsDescription = view.findViewById(R.id.fragment_news_description);
+       newsImage = view.findViewById(R.id.fragment_sports_image);
+       newsTitle = view.findViewById(R.id.fragment_sports_title);
+       newsDescription = view.findViewById(R.id.fragment_sports_description);
        newsPublishedAt = view.findViewById(R.id.fragment_news_publishedAt);
        newsSources = view.findViewById(R.id.fragment_news_sources);
        saveNewsButton = view.findViewById(R.id.saveRestaurantButton);
