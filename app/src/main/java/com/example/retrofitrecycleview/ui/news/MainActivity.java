@@ -20,7 +20,7 @@ import com.example.retrofitrecycleview.models.news.NewsResponse;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsApi;
 import com.example.retrofitrecycleview.newtork.generalnews.NewsClient;
 import com.example.retrofitrecycleview.ui.EntertainmentActivity;
-import com.example.retrofitrecycleview.ui.HealthActivity;
+import com.example.retrofitrecycleview.ui.makeup.MakeupActivity;
 import com.example.retrofitrecycleview.ui.sport.SportsActivity;
 
 import java.util.ArrayList;
@@ -39,8 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //click images
     ImageView openSports;
-    ImageView openHealth;
+    ImageView openMakeup;
     ImageView openEnter;
+    ImageView openWeather;
 
     TextView mUnderline;
 
@@ -54,13 +55,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //click images
         openSports = findViewById(R.id.sports_news);
-        openHealth = findViewById(R.id.health_image);
+        openMakeup = findViewById(R.id.make_up_image);
         openEnter = findViewById(R.id.entertainment_image);
+        openWeather = findViewById(R.id.weather_image);
 
 
         openSports.setOnClickListener(this);
-        openHealth.setOnClickListener(this);
+        openMakeup.setOnClickListener(this);
         openEnter.setOnClickListener(this);
+        openWeather.setOnClickListener(this);
 
 
         apiCall();
@@ -100,13 +103,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, SportsActivity.class);
             startActivity(intent);
         }
-        if (view == openHealth) {
-            Intent health = new Intent(MainActivity.this, HealthActivity.class);
+        if (view == openMakeup) {
+            Intent health = new Intent(MainActivity.this, MakeupActivity.class);
             startActivity(health);
         }
         if (view == openEnter){
             Intent entertainment = new Intent(MainActivity.this, EntertainmentActivity.class);
             startActivity(entertainment);
+        }
+        if (view == openWeather){
+            Intent weather = new Intent(MainActivity.this, EntertainmentActivity.class);
+            startActivity(weather);
         }
 
     }

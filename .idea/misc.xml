@@ -3,19 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/search_view.xml" value="0.3565" />
         <entry key="app/src/main/res/layout/activity_display_sport.xml" value="0.33106884057971014" />
         <entry key="app/src/main/res/layout/activity_health.xml" value="0.33106884057971014" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1574074074074074" />
+        <entry key="app/src/main/res/layout/activity_makeup.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_news_item.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_sports.xml" value="0.32608695652173914" />
+        <entry key="app/src/main/res/layout/activity_sports.xml" value="0.3089887640449438" />
         <entry key="app/src/main/res/layout/activity_weather.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_weather2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_sports.xml" value="0.33106884057971014" />
         <entry key="app/src/main/res/layout/fragment_view.xml" value="0.5318818040435459" />
+        <entry key="app/src/main/res/layout/makeup.xml" value="0.33" />
         <entry key="app/src/main/res/layout/newsitemactivity.xml" value="0.18177083333333333" />
-        <entry key="app/src/main/res/layout/newsitems.xml" value="0.2671875" />
-        <entry key="app/src/main/res/layout/sportlayout.xml" value="0.33106884057971014" />
+        <entry key="app/src/main/res/layout/newsitems.xml" value="0.1976284584980237" />
+        <entry key="app/src/main/res/layout/sportlayout.xml" value="0.3225806451612903" />
+        <entry key="app/src/main/res/layout/weather.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.1" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.35625" />
       </map>
     </option>
   </component>
